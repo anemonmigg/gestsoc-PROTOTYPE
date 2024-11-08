@@ -1,6 +1,6 @@
 import { TextInput, Stack, ScrollArea, Container } from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
-import Route from "../components/Route.jsx"
+import Route from '../components/Route'
 
 function FindRoutes() {
   const searchIcon = <IconSearch size={24}/>
@@ -21,9 +21,7 @@ function FindRoutes() {
         pointer
       />
       <ScrollArea style={{flex: 1}}>
-        <Container size='lg'>
-          <Route/>
-        </Container>
+        <Route/>
       </ScrollArea>
     </Stack>
   )

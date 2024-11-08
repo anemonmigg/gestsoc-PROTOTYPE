@@ -29,9 +29,9 @@ const router = createBrowserRouter([
       {
         path: 'user-routes',
         element: <UserRoutes/>
-      }
-    ]
-  }
+      },
+    ],
+  },
 ])
 
 createRoot(document.getElementById('root')!).render(

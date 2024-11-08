@@ -7,11 +7,14 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 import { NavLink } from '@mantine/core';
 import { MantineProvider } from '@mantine/core';
 import { Outlet } from 'react-router-dom';
+import Theme from './theme/Theme.tsx'
+
 function App() {
   const [opened, { toggle }] = useDisclosure();
+  const theme = Theme
 
   return (
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <AppShell
         header={{ height: 60 }}
         navbar={{
